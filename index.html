@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" type="module" defer></script>
+</head>
+<body>
+
+    <form id="myFormulario">
+        <label>Escoja su tipo de puntaje</label>
+        <br>
+        <label>Traditional</label>
+        <input type="radio" name="eleccion" value="Traditional">
+        <label>SBG-Rating</label>
+        <input type="radio" name="eleccion" value="SBG-Rating"><br>
+        <input type="number" name="puntaje" placeholder="puntaje">
+        <input type="submit" value="Enviar" >
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="border border-5" >Traditional</th>
+                <th class="border border-5">PointRange</th>
+                <th class="border border-5" >Letter</th>
+                <th class="border border-5" >SBGRating</th>
+                <th class="border border-5" >ProficiencyLevelWithStandard</th>
+            </tr>
+        </thead>
+        <tbody id="myTabla" class="text-center">
+        </tbody>
+    </table>
+</body>
+</html>
